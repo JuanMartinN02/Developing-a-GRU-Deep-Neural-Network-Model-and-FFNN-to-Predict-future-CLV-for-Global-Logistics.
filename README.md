@@ -1,14 +1,12 @@
 # Customer Lifetime Value Prediction with Neural Networks
 
-This repository contains the full implementation of a Customer Lifetime Value (CLV) prediction system built using real transactional data. The project covers the complete pipeline, from raw data preprocessing to model training and deployment through a REST API.
+Full implementation of a Customer Lifetime Value (CLV) prediction system built using real transactional data. The project covers the complete pipeline, from raw data preprocessing to model training and deployment through a REST API.
 
 The main objective is to study how different neural network architectures perform when predicting future customer spending under realistic data conditions, including noise, missing activity periods, heavy-tailed distributions, and heterogeneous customer behavior.
 
 The project was developed as part of an undergraduate thesis in Systems Engineering, with a strong focus on applied machine learning and real-world constraints.
 
 ## Project overview
-
-The repository includes:
 
  -A Feed Forward Neural Network (FFNN) trained on aggregated customer features.
 
@@ -34,26 +32,7 @@ The models were trained using a public transactional dataset with properties sim
 
 This makes the problem closer to a real production scenario than to a clean academic dataset.
 
-## Models:
-
-### Feed Forward Neural Network (FFNN):
-
-The FFNN uses customer-level aggregated features derived from historical transactions, such as:
-
- -Total monetary value
-
- -Purchase frequency
-
- -Recency
-
- -Product diversity
-
- -Activity metrics
-
- -Short-term spending and frequency indicators
-
-This model serves as a strong baseline but does not explicitly model temporal dependencies.
-
+## Model:
 
 ### Gated Recurrent Unit (GRU):
 
